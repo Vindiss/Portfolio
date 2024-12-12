@@ -37,6 +37,22 @@
     .progress-bar-fill::after {
         content: '';
     }
+
+    .slider--item-image {
+      position: relative; /* Position nécessaire pour que l'image remplisse bien */
+      width: 100%; /* Assure que le conteneur prend toute la largeur */
+      height: 100%; /* Assure que le conteneur prend toute la hauteur (peut être réglée selon la hauteur du slider) */
+      overflow: hidden; /* Coupe les parties débordantes de l'image */
+    }
+
+    .slider--item-image img {
+      position: absolute; /* Permet un meilleur contrôle de placement */
+      top: 0;
+      left: 0;
+      width: 100%; /* L'image prend toute la largeur */
+      height: 100%; /* L'image prend toute la hauteur */
+      object-fit: cover; /* Remplit le conteneur sans déformer l'image */
+    }
   </style>
 </head>
 <body>
@@ -106,25 +122,16 @@
                   <li class="slider--item slider--item-right">
                     <a href="https://github.com/Snip2Fou/C-Pokemon-Project">
                       <div class="slider--item-image">
-                        <img src="assets/img/work-alex-nowak.jpg" alt="Alex Nowak">
+                        <img src="assets/img/work-alex-nowak.jpg" alt="Pokemon">
                       </div>
                       <p class="slider--item-title">Pokemon</p>
                       <p class="slider--item-description">Un petit jeux en C# sur console sur pokemon.</p>
                     </a>
                   </li>
-                  <li class="slider--item slider--item-left">
-                    <a href="https://github.com/Snip2Fou/Projet-4-Tower-Defence">
-                      <div class="slider--item-image">
-                        <img src="assets/img/work-victory.jpg" alt="Victory">
-                      </div>
-                      <p class="slider--item-title">Tower Defence</p>
-                      <p class="slider--item-description">Un petit projet de groupe avec SFML sur un Tower Defence.</p>
-                    </a>
-                  </li>
                   <li class="slider--item slider--item-center">
                     <a href="https://github.com/Vindiss/Jeux-SFML">
                       <div class="slider--item-image">
-                        <img src="assets/img/work-metiew-smith.jpg" alt="Metiew and Smith">
+                        <img src="assets/img/SFML.png" alt="Jeux-SFML">
                       </div>
                       <p class="slider--item-title">Petit jeux SFML</p>
                       <p class="slider--item-description">Un petit projot de groupe SFML sur un jeux arcarde en 2D.</p>
@@ -133,7 +140,7 @@
                   <li class="slider--item slider--item-right">
                     <a href="https://github.com/Vindiss/UnityProject">
                       <div class="slider--item-image">
-                        <img src="assets/img/work-alex-nowak.jpg" alt="Alex Nowak">
+                        <img src="assets/img/RockLeague.png" alt="Rocket league like">
                       </div>
                       <p class="slider--item-title">Jeux Unity</p>
                       <p class="slider--item-description">Un Rocket league link sur unity en 2 semaine.</p>
@@ -142,12 +149,21 @@
                   <li class="slider--item slider--item-right">
                     <a href="https://github.com/Vindiss/Zorya-Sisters">
                       <div class="slider--item-image">
-                        <img src="assets/img/work-alex-nowak.jpg" alt="Alex Nowak">
+                        <img src="assets/img/Zorya.png" alt="Zorya-Sisters">
                       </div>
                       <p class="slider--item-title">Zorya Sisters</p>
                       <p class="slider--item-description">Zorya Sisters est un platformer/puzzle 2D développé avec SFML.</p>
                     </a>
-                  </li>                  
+                  </li>    
+                  <li class="slider--item slider--item-right">
+                    <a href="https://github.com/Vindiss/Zorya-Sisters">
+                      <div class="slider--item-image">
+                        <img src="assets/img/BattleOfPirate.png" alt="BattleOfPirate">
+                      </div>
+                      <p class="slider--item-title">BattleOfPirate</p>
+                      <p class="slider--item-description">Battle Of Pirate est un jeux navale d'action fait sur Unity.</p>
+                    </a>
+                  </li>                 
                 </ul>
                 <div class="slider--prev">
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -184,7 +200,7 @@
                       <div class="progress-bar-fill" style="width: 70%;">PHP 700%</div>
                   </div>  
                   <div class="progress-bar">
-                    <div class="progress-bar-fill" style="width: 80%;">UNITY 80%</div>
+                    <div class="progress-bar-fill" style="width: 65%;">UNITY 65%</div>
                   </div> 
                   <div class="progress-bar">
                     <div class="progress-bar-fill" style="width: 60%;">C 60%</div>
@@ -197,7 +213,10 @@
                   </div> 
                   <div class="progress-bar">
                     <div class="progress-bar-fill" style="width: 60%;">PYTHON 60%</div>
-                  </div> 
+                  </div>
+                  <!-- <div class="progress-bar">
+                    <div class="progress-bar-fill" style="width: 60%;">Unreal 60%</div>
+                  </div>  -->
               </div>
             </div>
           </li>
