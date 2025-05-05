@@ -53,6 +53,33 @@
       height: 100%; /* L'image prend toute la hauteur */
       object-fit: cover; /* Remplit le conteneur sans déformer l'image */
     }
+
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 30px;
+      justify-content: center;
+    }
+    
+    .skill {
+      background: linear-gradient(135deg, #00c3ff, #0078ff);
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 16px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .skill:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(0, 120, 255, 0.5);
+      cursor: default;
+    }
   </style>
 </head>
 <body>
@@ -72,7 +99,7 @@
           <ul class="side-nav">
             <li class="is-active"><span>Accueil</span></li>
             <li><span>Projets</span></li>
-            <!--<li><span>A propos de moi</span></li>-->
+            <li><span>Mes compétences</span></li>
             <li><span>Contactez-moi</span></li>
           </ul>
         </nav>
@@ -114,7 +141,7 @@
                         <img src="assets/img/Wargame.png" alt="Wargame">
                       </div>
                       <p class="slider--item-title">WarGame</p>
-                      <p class="slider--item-description">Une démo technique de simulation du comportement de véhicules de guerre (tanks, avions).</p>
+                      <p class="slider--item-description">Une démo technique simulant le comportement de véhicules de guerre (tanks, avions).</p>
                     </a>
                   </li>
                   <li class="slider--item slider--item-center">
@@ -123,7 +150,7 @@
                         <img src="assets/img/NeonCar.png" alt="NeonCar">
                       </div>
                       <p class="slider--item-title">Neoncar</p>
-                      <p class="slider--item-description">Un jeu de course classique avec l'ajout d'une IA pour challenger les joueurs sur plusieurs tours.</p>
+                      <p class="slider--item-description">Un jeu de course classique, enrichi par une IA qui défie les joueurs sur plusieurs tours.</p>
                     </a>
                   </li>
                   <li class="slider--item slider--item-right">
@@ -132,7 +159,7 @@
                         <img src="assets/img/RockLeague.png" alt="Rocket league like">
                       </div>
                       <p class="slider--item-title">RocktLike</p>
-                      <p class="slider--item-description">Un jeu en 3D inspiré de Rocket League, où les joueurs utilisent des véhicules pour marquer des buts.</p>
+                      <p class="slider--item-description">Un jeu en 3D inspiré de Rocket League, dans lequel les joueurs utilisent des véhicules pour marquer des buts.</p>
                     </a>
                   </li>
                   <li class="slider--item slider--item-right">
@@ -141,7 +168,7 @@
                         <img src="assets/img/Zorya.png" alt="Zorya-Sisters">
                       </div>
                       <p class="slider--item-title">Zorya Sisters</p>
-                      <p class="slider--item-description">Jeu 2D combinant des puzzles et des plateformes, conçu pour offrir des expériences interactives et engageantes.</p>
+                      <p class="slider--item-description">Jeu 2D mêlant puzzles et plateformes, conçu pour offrir une expérience interactive et engageante.</p>
                     </a>
                   </li>    
                   <li class="slider--item slider--item-right">
@@ -150,7 +177,7 @@
                         <img src="assets/img/BattleOfPirate.png" alt="BattleOfPirate">
                       </div>
                       <p class="slider--item-title">BattleOfPirate</p>
-                      <p class="slider--item-description">Un jeu de stratégie en temps réel où le joueur contrôle un navire et se bat pour dominer les océans.</p>
+                      <p class="slider--item-description">Un jeu de stratégie en temps réel dans lequel le joueur contrôle un navire pour dominer les océans.</p>
                     </a>
                   </li>
                   <li class="slider--item slider--item-right">
@@ -159,7 +186,7 @@
                         <img src="assets/img/moteur.jpg" alt="Engine">
                       </div>
                       <p class="slider--item-title">Engine</p>
-                      <p class="slider--item-description">Création d'un moteur de jeu personnalisé capable de gérer des Game Object basique</p>
+                      <p class="slider--item-description">Création d'un moteur de jeu personnalisé capable de gérer des objets de jeu basiques.</p>
                     </a>
                   </li>                 
                 </ul>
@@ -183,47 +210,34 @@
               </div>
             </div>
           </li>
-          <!--<li class="l-section section">
+          <li class="l-section section">
             <div class="about">
               <div class="about--banner">
-                <h2>Mes Compétences</h2>
-                <div class="progress-bar-container">
-                  <div class="progress-bar">
-                      <div class="progress-bar-fill" style="width: 70%;">HTML & CSS 70%</div>
-                  </div>
-                  <div class="progress-bar">
-                      <div class="progress-bar-fill" style="width: 50%;">JavaScript 50%</div>
-                  </div>
-                  <div class="progress-bar">
-                      <div class="progress-bar-fill" style="width: 70%;">PHP 70%</div>
-                  </div>  
-                  <div class="progress-bar">
-                    <div class="progress-bar-fill" style="width: 65%;">UNITY 65%</div>
-                  </div> 
-                  <div class="progress-bar">
-                    <div class="progress-bar-fill" style="width: 60%;">C 60%</div>
-                  </div> 
-                  <div class="progress-bar">
-                    <div class="progress-bar-fill" style="width: 75%;">C++ 75%</div>
-                  </div> 
-                  <div class="progress-bar">
-                    <div class="progress-bar-fill" style="width: 75%;">C# 75%</div>
-                  </div> 
-                  <div class="progress-bar">
-                    <div class="progress-bar-fill" style="width: 60%;">PYTHON 60%</div>
-                  </div>
-                   <div class="progress-bar">
-                    <div class="progress-bar-fill" style="width: 60%;">Unreal 60%</div>
-                  </div>  
+                <h2>Mes compétences</h2>
+                <div class="skills-container">
+                  <span class="skill">HTML</span>
+                  <span class="skill">CSS</span>
+                  <span class="skill">JavaScript</span>
+                  <span class="skill">PHP</span>
+                  <span class="skill">PHPMyAdmin</span>
+                  <span class="skill">MySQL</span>
+                  <span class="skill">MariaDB</span>
+                  <span class="skill">UNITY</span>
+                  <span class="skill">C</span>
+                  <span class="skill">C++</span>
+                  <span class="skill">C#</span>
+                  <span class="skill">Python</span>
+                  <span class="skill">Unreal</span>
+                </div>
               </div>
             </div>
-          </li>-->
+          </li>
           <li class="l-section section">
             <div class="contact">
               <div class="contact--lockup">
                 <div class="modal">
                   <div class="modal--information">
-                    <p>248 Avenue Charles Peguy, 77190 Dammarie-les-lys, France</p>
+                    <p>248 Avenue Charles Péguy, 77190 Dammarie-les-Lys, France</p>
                     <a href="mailto:ouremail@gmail.com">david.deoliveira77190@gmail.com</a>
                     <p>07 88 37 75 19</p>
                   </div>
@@ -241,7 +255,7 @@
   <ul class="outer-nav">
     <li class="is-active">Accueil</li>
     <li>Projets</li>
-    <!--<li>A propos de moi</li>-->
+    <li>Mes Compétences</li>
     <li>Contactez-moi</li>
   </ul>
 </div>
